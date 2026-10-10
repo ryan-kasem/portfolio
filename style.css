@@ -1,10 +1,176 @@
+/* Step 2.4: accent color available to the whole document */
+html {
+  --color-accent: oklch(65% 50% 0);
+  --color-border: oklch(80% 3% 200);
+  accent-color: var(--color-accent);
+}
+
+/* Step 1: limit width, center, keep breathing room on small screens */
 body {
   font: 100%/1.5 system-ui;
-  max-width: 50em;
-  margin: 0 auto;
-  padding: 1em;
+  max-width: 100ch;
+  margin-inline: max(1em, (100% - 100ch) / 2);
 }
-nav ul { display: flex; flex-wrap: wrap; gap: 1em; list-style: none; padding: 0; }
-img { max-width: 100%; height: auto; }
-label { display: block; margin-block: 0.75em; }
-input, textarea { display: block; width: 100%; box-sizing: border-box; font: inherit; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Step 4.4: heading defaults and stronger hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+/* Step 2: navigation bar */
+nav {
+  display: flex;
+  margin-bottom: 1em;
+  border-bottom: 1px solid var(--color-border);
+
+  ul, li {
+    display: contents;
+  }
+
+  a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
+
+    &.current {
+      border-bottom: 0.4em solid var(--color-border);
+      padding-bottom: 0.1em;
+    }
+
+    &:hover {
+      border-bottom: 0.4em solid var(--color-accent);
+      padding-bottom: 0.1em;
+      background-color: oklch(from var(--color-accent) 95% 5% h);
+    }
+  }
+}
+
+/* Step 3: contact form grid with subgrid labels */
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+
+  input, textarea, button {
+    font: inherit;
+  }
+
+  label {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+  }
+
+  button {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Step 4: responsive projects grid, rows aligned with subgrid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+
+  article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+  }
+
+  h2 {
+    margin: 0;
+  }
+}
+
+/* Step 5: CV */
+.cv {
+  h1 {
+    margin-block-end: 0.1em;
+  }
+
+  .tagline {
+    margin-block-start: 0;
+    color: oklch(50% 3% 200);
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 1.5em;
+    padding: 0;
+    list-style: none;
+  }
+
+  section {
+    margin-block: 2em;
+
+    > h2 {
+      font-size: 150%;
+      color: var(--color-accent);
+      padding-bottom: 0.25em;
+      border-bottom: 2px solid oklch(from var(--color-accent) 90% 8% h);
+    }
+  }
+
+  article {
+    margin-block: 1.25em;
+    padding-inline-start: 1em;
+    border-inline-start: 3px solid var(--color-border);
+
+    &:hover {
+      border-inline-start-color: var(--color-accent);
+    }
+
+    h3 {
+      margin-block: 0 0.2em;
+    }
+
+    .meta {
+      margin-block: 0;
+      font-size: 90%;
+      color: oklch(50% 3% 200);
+    }
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.5em 1.5em;
+
+    dt {
+      font-weight: 600;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 40em) {
+  h1 {
+    font-size: 250%;
+  }
+
+  .cv .skills {
+    grid-template-columns: 1fr;
+    gap: 0.1em;
+
+    dd {
+      margin-block-end: 0.75em;
+    }
+  }
+}
