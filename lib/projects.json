@@ -1,0 +1,74 @@
+[
+  {
+    "title": "NeuralRAG",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A production-grade retrieval-augmented generation system with a fine-tunable sentence transformer, FAISS retrieval, cross-encoder reranking, and a FastAPI server running Llama 3.2 locally."
+  },
+  {
+    "title": "AutoAgent",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "An autonomous ReAct agent with web search, Wikipedia, math, and sandboxed Python tools, plus short-term and long-term memory. Reaches 80%+ success across five task categories."
+  },
+  {
+    "title": "Sentinel",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "An end-to-end release validation harness for a live seven-service healthcare AI platform. Playwright-driven actors simulate clinical user journeys across WhatsApp and web chat before every production deploy."
+  },
+  {
+    "title": "Email Auto-Reply",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A full-stack Flask and React app that parses incoming email and drafts context-aware replies through the OpenAI API. Processed 500+ threads and cut manual response time by roughly 70%."
+  },
+  {
+    "title": "Granny Green Acquisition Stack",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A seven-device synchronized recording pipeline for an IRB-approved stress-recovery study: Polar H10 ECG, EmotiBit, a Vernier respiration belt, seven cameras, and multichannel audio, all streamed into PsychoPy over LSL."
+  },
+  {
+    "title": "Is Indulgence Rewarded?",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A statistical investigation of 230,000 Food.com recipes asking whether richer recipes earn higher ratings. Includes missingness analysis, permutation testing, and a predictive model, published as a static site."
+  },
+  {
+    "title": "FIELD",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A website concept for the UCSD XR Lab built on a biophilic nature palette, chosen from three competing design directions and carried through to a matching RA identification badge."
+  },
+  {
+    "title": "Hashing Study Guide",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A typeset reference on hash tables, load factors, and collision resolution, written to match the exact question formats used on the DSC 40B final exam."
+  },
+  {
+    "title": "This Portfolio",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A hand-written personal site with no framework: semantic HTML, a CSS grid layout with subgrid, an automatic navigation menu, a dark mode switch, and project cards templated from this very JSON file."
+  },
+  {
+    "title": "Collab Reel",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A promotional edit cut in Final Cut Pro for a student organization collaboration, mixing handheld footage, motion graphics, and a music-driven cut structure."
+  },
+  {
+    "title": "Cognition Podcast",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A recorded and edited audio piece translating cognitive science research into plain language for a general audience, produced for a UCSD course midterm."
+  },
+  {
+    "title": "Data Structures in Java",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "From-scratch implementations of linked lists, hash tables, heaps, and balanced trees with JUnit test suites, written while working through the DSC 30 sequence."
+  }
+]
