@@ -1,5 +1,12 @@
 [
   {
+    "title": "Bikewatching",
+    "year": "2026",
+    "image": "https://ryan-kasem.github.io/portfolio/images/bikewatching.png",
+    "description": "An interactive Mapbox + D3 map of ~260K Bluebikes rides in Boston and Cambridge (March 2024). Circle size shows station traffic, color shows whether riders mostly arrive or depart, and a time-of-day slider reveals the commute flipping from morning to evening.",
+    "url": "https://ryan-kasem.github.io/dsc106-lab07/"
+  },
+  {
     "title": "NeuralRAG",
     "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
